@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+	font-family: "Lato";
+}
+
+.title {
+	font-family: "Roboto";
+	color: blue;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Regular.woff2") format("woff2"), url(../fonts/Larsseit-Regular.woff) format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Medium.woff2") format("woff2"), url(../fonts/Larsseit-Medium.woff) format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Bold.woff2") format("woff2"), url(../fonts/Larsseit-Bold.woff) format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.woff2") format("woff2"), url(../fonts/Larsseit-Regular.woff) format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Bold.woff2") format("woff2"), url(../fonts/Lato-Bold.woff) format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Black.woff2") format("woff2"), url(../fonts/Lato-Black.woff) format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.basic-information {
+	font-family: "Lato";
+	font-weight: 900;
+	color: green;
+}
+
+.history-name {
+	font-family: "Lato";
+	font-weight: 700;
+	color: grey;
+}
+
+.basic-expression {
+	font-family: "Lato";
+	font-weight: 400;
+	color: orange;
+}
+
+.brief-description-company {
+	font-family: "Larsseit";
+	font-weight: 700;
+	color: blue;
+}
+
+#company-history {
+	font-family: "Larsseit";
+	font-weight: 700;
+	color: red;
+}
+
+li {
+	font-family: "Larsseit";
+	font-weight: 500;
+	color: aqua;
+}
+
+.company-history-list .company-history-item {
+	font-family: "Larsseit";
+	font-weight: 400;
+	color: grey;
+}
