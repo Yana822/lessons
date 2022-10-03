@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+body {
+	font-family: Lato, sans-serif;
+}
+
+.info {
+	max-width: 810px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.main-title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	margin: 190px 0 92px 0;
+	align-items: center;
+}
+
+.main-image {
+	max-width: 810px;
+	border-radius: 4px;
+	margin-bottom: 60px;
+}
+
+.subtitle {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 28px;
+}
+
+.basic-information {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+}
+
+.citation {
+	color: #1E212C;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	width: 752px;
+	height: 120px;
+	margin-bottom: 48px;
+	margin-left: 58px;
+}
+
+.title-list {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 24px;
+}
+
+.list {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 24px;
+	margin-left: 33px;
+}
+
+.conclusion {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+}
+
+.practice-block-1 {
+	background-color: #77608d;
+	max-width: 100px;
+	height: 300px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	border-left: 5px dotted #321456;
+}
+
+.practice-block-2 {
+	display: inline-block;
+	background-color: #567893;
+	max-width: 100px;
+	max-height: 100px;
+	overflow: scroll;
+	margin-bottom: 30px;
+	outline: 7px solid #987321;
+}
+
+.practice-block-3 {
+	background-color: #989321;
+	overflow: auto;
+	max-width: 300px;
+	max-height: 200px;
+	margin-bottom: 30px;
+	border: 10px solid #321456;
+}
+
+.link {
+	display: inline-block;
+	background-color: #748376;
+	padding: 30px;
+	margin: 10px 0 10px;
+	border-radius: 20px 10px 50px 70px;
+	margin-left: 50px;
+}
+
+.link:focus {
+	outline: 7px solid #159328;
+}
+
+.cat-title,
+.practice-title {
+	font-weight: 900;
+	font-size: 30px;
+	color: #567893;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.items {
+	font-size: 0%;
+	background-color: #748376;
+	padding: 20px;
+	border-radius: 30px;
+	margin: 20px 0px 40px 0px;
+}
+
+.item {
+	font-size: 20px;
+	max-width: 150px;
+}
+
+.radius {
+	background-color: yellow;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	box-shadow: 20px 20px 20px 20px #989321;
+	margin-bottom: 50px;
+	opacity: 50%;
+}
