@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background-color: #333;
+	font-family: Lato, sans-serif;
+}
+
+.section {
+	padding: 30px;
+}
+
+.section__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgba(102, 102, 102, 0.8);
+}
+
+.section__title {
+	background-color: #88ACFF;
+	text-align: center;
+	font-weight: 400;
+	font-size: 25px;
+	margin: 30px 40px;
+	border-radius: 30px;
+	padding: 15px;
+}
+
+.section__item {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: url('../img/suzuki-jimny.jpg') 0 0 / cover no-repeat;
+}
+
+.section__item--translate:hover {
+	transform: translate(50px, 30px);
+}
+
+.section__item--scale:hover {
+	transform: scale(0.5);
+
+}
+
+.section__item--rotate:hover {
+	transform: rotate(45deg)
+}
+
+.section__item--skew:hover {
+	transform: skew(-35deg, 0deg);
+}
+
+.section__item--matrix:hover {
+	transform: matrix(0.5, 0.1, 0.1, 0.5, 20, 10);
+}
+
+.section__item--translate:hover {
+	transform: translate(30px, 30px) rotate(45deg) scale(0.8) skew(20deg, 20deg);
+}
+
+.section__item--transform-origin:hover {
+	transform-origin: 0 0;
+	transform: rotate(-20deg);
+}
+
+.section__body--perspective {
+	perspective: 500px;
+	perspective-origin: center;
+}
+
+.section__item--perspective:hover {
+	transform: rotateX(45deg);
+}
+
+.section__body--translate3d {
+	perspective: 500px;
+}
+
+.section__item--translate3d:hover {
+	transform: translate3d(10px, 50px, 50px);
+}
+
+.section__body--scale3d {
+	perspective: 400px;
+}
+
+.section__item--scale3d:hover {
+	transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.section__body--rotate3d {
+	perspective: 400px;
+}
+
+.section__item--rotate3d:hover {
+	transform: rotate3d(1, 1, 1, 45deg) scale3d(1, 1, 1);
+}
+
+.section__body--transform-style {
+	perspective: 400px;
+	transform-style: preserve-3d;
+}
+
+.section__item--transform-style:hover {
+	transform: rotateY(60deg);
+}
+
+.card {
+	position: relative;
+	width: 400px;
+	height: 230px;
+}
+
+.card__front {
+	z-index: 1;
+	position: relative;
+	background: url('../img/suzuki-jimny-front.jpeg') 0 0 / cover no-repeat;
+	height: 100%;
+	text-align: center;
+	backface-visibility: hidden;
+	transition: transform .3s cubic-bezier(.2, .85, .4, 1.275);
+}
+
+.card__back {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../img/suzuki-jimny.jpg') 0 0 / cover no-repeat;
+	text-align: center;
+	backface-visibility: hidden;
+
+	transform: rotateY(-180deg);
+	transition: transform .3s cubic-bezier(.2, .85, .4, 1.275);
+}
+
+.card:hover .card__back {
+	transform: rotateY(0deg);
+	z-index: 2;
+}
+
+.card:hover .card__front {
+	transform: rotateY(180deg);
+	z-index: -1;
+}
